@@ -1,0 +1,286 @@
+body {
+    font-family: sans-serif;
+}
+
+.rating {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: inline-block;
+}
+
+.rating-option.red {
+    background: url(../img/rating-sprite.png) -24px 0;
+    width: 24px;
+    height: 22px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.rating-option.red.act {
+    background: url(../img/rating-sprite.png) 0 0;
+}
+
+.rating-option.blue {
+    background: url(../img/rating-sprite.png) -45px -29px;
+    width: 41px;
+    height: 38px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.rating-option.blue.act {
+    background: url(../img/rating-sprite.png) -2px -29px;
+}
+
+
+
+
+
+.progress-bar {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+.progress-bg {
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+
+.progress-bg-left {
+    height: 32px;
+    float: left;
+    width: 16px;
+    background: url(../img/progress-sprite.png) -2px -3px;
+}
+
+.progress-bg-right {
+    float: right;
+    height: 32px;
+    width: 16px;
+    background: url(../img/progress-sprite.png) 90px -3px;
+}
+
+.progress-bg-mid {
+    margin: 0 16px;
+    height: 32px;
+    background: url(../img/progress-bg.png);
+}
+
+.progress-fg {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+}
+
+.progress-fg-left {
+    height: 32px;
+    float: left;
+    width: 16px;
+    background: url(../img/progress-sprite.png) -69px -3px;
+}
+
+.progress-fg-right {
+    height: 32px;
+    width: 16px;
+    background: url(../img/progress-sprite.png) -86px -3px;
+    position: absolute;
+    top: 0px;
+    right: -16px;
+}
+
+.progress-fg-cont {
+    margin: 0 16px;
+    height: 32px;
+}
+
+.progress-fg-mid {
+    height: 32px;
+    background: url(../img/progress-fg-green.png);
+}
+
+.progress.green {
+    position: relative;
+}
+
+.progress-label {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 32px;
+    font-weight: bold;
+}
+
+.progress-bg-blue {
+    height: 100%;
+    background: white;
+
+    -webkit-box-shadow: inset 0 2px 6px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0 2px 6px 0px rgba(0,0,0,0.5);
+    box-shadow: inset 0 2px 6px 0px rgba(0,0,0,0.5);
+    
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    border-radius: 14px;
+}
+
+.progress-fg-blue {
+    height: 100%;
+    background: #4bf;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    
+    -webkit-box-shadow: inset 0 0px 9px 3px rgba(5,5,5,0.4);    
+    -moz-box-shadow: inset 0 0px 9px 3px rgba(5,5,5,0.4);    
+    box-shadow: inset 0 0px 9px 3px rgba(5,5,5,0.4);    
+
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    border-radius: 14px;
+}
+
+.progress-label.blue {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+
+
+
+
+.button {
+    padding: 5px 25px;
+    border-radius: 14px;
+    
+    -webkit-box-shadow: inset 0 0px 6px 0px rgba(5,5,5,0.4);    
+    -moz-box-shadow: inset 0 0px 6px 0px rgba(5,5,5,0.4);    
+    box-shadow: inset 0 0px 6px 0px rgba(5,5,5,0.4);    
+    
+    background: -moz-linear-gradient(top, #ccc 0%, #eee 50%, #ccc 100%);
+    background: -webkit-linear-gradient(top, #ccc 0%, #eee 50%, #ccc 100%);
+    background: -o-linear-gradient(top, #aaa 0%, #eee 50%, #ccc 100%);
+    background: -ms-linear-gradient(top, #ccc 0%, #eee 50%, #ccc 100%);
+    background: linear-gradient(top, #ccc 0%, #eee 50%, #ccc 100%);
+    border: none;
+}
+
+.button:hover {
+    background: -moz-linear-gradient(top, #aaa 0%, #eee 50%, #aaa 100%);
+    background: -webkit-linear-gradient(top, #bbb 0%, #eee 50%, #bbb 100%);
+    background: -o-linear-gradient(top, #aaa 0%, #eee 50%, #aaa 100%);
+    background: -ms-linear-gradient(top, #aaa 0%, #eee 50%, #aaa 100%);
+    background: linear-gradient(top, #aaa 0%, #eee 50%, #aaa 100%);
+    border: none;
+}
+
+.button:active {
+    -webkit-box-shadow: inset 0 0px 15px 0px rgba(5,5,5,0.4);    
+    -moz-box-shadow: inset 0 0px 15px 0px rgba(5,5,5,0.4);    
+    box-shadow: inset 0 0px 15px 0px rgba(5,5,5,0.4);    
+}
+
+
+
+
+.browsers {
+    margin: 0;
+    padding: 0;
+}
+
+.browser {
+    text-align: center;
+    width: 64px;
+    height: 62px;
+    display: inline-block;
+    list-style: none;
+    overflow: hidden;
+}
+
+.browser:last-child {
+    float: right;
+}
+
+.browser.chrome {
+}
+
+.ch-rome {
+    color: green; 
+}
+
+.ch-ro-me {
+    color: red; 
+}
+
+.chro-me {
+    color: #fce229; 
+}
+
+.browser.chrome:before {
+    background: url(../img/browser-sprite.png) 0 -64px;
+    content: url(../img/browser-sprite.png);
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+}
+
+.browser.firefox {
+    color: orange;
+}
+
+.browser.firefox:before {
+    background: url(../img/browser-sprite.png) 0 -127px;
+    content: url(../img/browser-sprite.png);
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+}
+
+.browser.opera {
+    color: red;
+}
+
+.browser.opera:before {
+    background: url(../img/browser-sprite.png) 0 -191px;
+    content: url(../img/browser-sprite.png);
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+}
+
+.browser.safari {
+    color: gray;
+}
+
+.browser.safari:before {
+    background: url(../img/browser-sprite.png) 0 -255px;
+    content: url(../img/browser-sprite.png);
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+}
+
+.browser.ie {
+    color: blue;
+}
+
+.browser.ie:before {
+    background: url(../img/browser-sprite.png) 0 -320px;
+    content: url(../img/browser-sprite.png);
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+}
+
+
+
