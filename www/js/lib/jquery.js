@@ -1,1 +1,1 @@
-jquery-2.1.1.js
+/home/anton/devel/yandex/yandex-front-vacancy/www/js/lib/jquery-1.11.1.min.js
