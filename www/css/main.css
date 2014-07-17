@@ -36,11 +36,13 @@ body {
 
 
 
+.middle {
+    vertical-align: middle;
+}
 
 .progress-bar {
     display: inline-block;
     position: relative;
-    vertical-align: middle;
 }
 
 .progress-bg {
@@ -161,8 +163,9 @@ body {
 
 .button {
     color: black;
-    padding: 5px 25px;
+    padding: 0px 25px;
     border-radius: 14px;
+    height: 32px;
     
     -webkit-box-shadow: inset 0 0px 6px 0px rgba(5,5,5,0.4);    
     -moz-box-shadow: inset 0 0px 6px 0px rgba(5,5,5,0.4);    
